@@ -1,11 +1,12 @@
+const base = import.meta.env.BASE_URL;
 const categories = [
-  { name: "Ghee", img: "/ghee.png" },
-  { name: "Coconut Oil", img: "/coconutoil.png" },
-  { name: "Honey", img: "/honey.png" },
-  { name: "Spices", img: "/spices.png" },
-  { name: "Coffee", img: "/coffee.png" },
-  { name: "Rice", img: "/rice.jpg" },
-  { name: "Nuts", img: "/nuts.jpg" },
+  { name: "Ghee", img: base + "ghee.png" },
+  { name: "Coconut Oil", img: base + "coconutoil.png" },
+  { name: "Honey", img: base + "honey.png" },
+  { name: "Spices", img: base + "spices.png" },
+  { name: "Coffee", img: base + "coffee.png" },
+  { name: "Rice", img: base + "rice.jpg" },
+  { name: "Nuts", img: base + "nuts.jpg" },
 ];
 
 function Categories() {
