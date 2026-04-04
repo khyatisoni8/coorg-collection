@@ -3,7 +3,7 @@ import { useState } from "react";
 function Products() {
 
   const [cart, setCart] = useState([]);
-
+  const base = import.meta.env.BASE_URL;
   const products = [
     {
       name: "A2 COW Pure Ghee",
@@ -119,7 +119,7 @@ function Products() {
               </span>
 
               <img
-                src={product.image}
+                src={`${base}${product.image}`}
                 alt={product.name}
                 className="w-full h-44 sm:h-48 md:h-52 lg:h-56 object-cover"
               />

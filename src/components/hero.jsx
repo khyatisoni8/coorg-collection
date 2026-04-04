@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 function Hero() {
+  const base = import.meta.env.BASE_URL;
   return (
     <section className="w-full">
 
@@ -21,7 +22,7 @@ function Hero() {
         <SwiperSlide>
           <div
             className="relative h-[320px] sm:h-[420px] lg:h-[550px] bg-contain bg-center flex items-center justify-center md:justify-start"
-            style={{ backgroundImage: "url('/bannerghee.jpg')" }}
+            style={{ backgroundImage: `url(${base}bannerghee.jpg)` }}
           >
             <div className="absolute inset-0 bg-black/40"></div>
 
@@ -45,7 +46,7 @@ function Hero() {
         <SwiperSlide>
           <div
             className="relative h-[320px] sm:h-[420px] lg:h-[550px] bg-contain bg-center flex items-center justify-center md:justify-start"
-            style={{ backgroundImage: "url('/bannerhoney.jpg')" }}
+            style={{ backgroundImage: `url(${base}bannerhoney.jpg)` }}
           >
             <div className="absolute inset-0 bg-black/40"></div>
 
@@ -69,7 +70,7 @@ function Hero() {
         <SwiperSlide>
           <div
             className="relative h-[320px] sm:h-[420px] lg:h-[550px] bg-contain bg-center flex items-center justify-center md:justify-start"
-            style={{ backgroundImage: "url('/bannercoconutoil.jpg')" }}
+            style={{ backgroundImage: `url(${base}bannercoconutoil.jpg)` }}
           >
             <div className="absolute inset-0 bg-black/40"></div>
 
@@ -93,7 +94,7 @@ function Hero() {
         <SwiperSlide>
           <div
             className="relative h-[320px] sm:h-[420px] lg:h-[550px] bg-contain bg-center flex items-center justify-center md:justify-start"
-            style={{ backgroundImage: "url('/bannerspices.jpg')" }}
+            style={{ backgroundImage: `url(${base}bannerspices.jpg)` }}
           >
             <div className="absolute inset-0 bg-black/40"></div>
 
@@ -117,7 +118,7 @@ function Hero() {
         <SwiperSlide>
           <div
             className="relative h-[320px] sm:h-[420px] lg:h-[550px] bg-contain bg-center flex items-center justify-center md:justify-start"
-            style={{ backgroundImage: "url('/bannercoffee.jpg')" }}
+            style={{ backgroundImage: `url(${base}bannercoffee.jpg)` }}
           >
             <div className="absolute inset-0 bg-black/40"></div>
 
